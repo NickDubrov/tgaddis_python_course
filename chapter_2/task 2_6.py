@@ -20,6 +20,7 @@ total_tax = fed_tax + reg_tax
 # Розрахунок загальної суми продажу
 total_amount = purchase_amount + total_tax
 
+# Виводимо на екран результати розрахунків.
 print(f"\nСума покупки: {purchase_amount:,.2f}")
 print(f"Федеральний податок з продажу: {fed_tax:,.2f}")
 print(f"Регіональний податок з продажу: {reg_tax:,.2f}")
