@@ -23,5 +23,5 @@ def convert_km_to_mi(kilometers):
     return kilometers * KILOMETERS_TO_MILES
 
 
-# Викликати головну функцію
+# Виклик головної функції.
 main()
