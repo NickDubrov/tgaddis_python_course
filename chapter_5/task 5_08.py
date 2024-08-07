@@ -41,20 +41,16 @@ def main():
 # Функція розраховує і повертає необхідну кількість банок з фарбою.
 def calculate_paint_cans(surface_area):
     paint_cans = surface_area // METERS_PER_CAN
-
     if (surface_area % METERS_PER_CAN) != 0:
         paint_cans += 1
-
     return paint_cans
 
 
 # Функція розраховує і повертає необхідну кількість робочих годин.
 def calculate_working_hours(surface_area):
     working_hours = surface_area // METERS_PER_HOUR
-
     if (surface_area % METERS_PER_HOUR) != 0:
         working_hours += 1
-
     return working_hours
 
 
