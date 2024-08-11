@@ -7,8 +7,8 @@ import random
 # Головна функція.
 def main():
     # Отримання випадкових чисел.
-    number1 = get_number()
-    number2 = get_number()
+    number1 = get_random_number()
+    number2 = get_random_number()
 
     # Розрахунок суми чисел.
     correct_answer = calculate_sum(number1, number2)
@@ -21,7 +21,7 @@ def main():
 
 
 # Функція повертає випадкове число.
-def get_number():
+def get_random_number():
     number = random.randint(1, 1000)
     return number
 
