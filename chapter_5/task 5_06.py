@@ -27,7 +27,6 @@ def main():
 def calculate_calories(grams_fat, grams_carbs):
     calories_fat = grams_fat * CALORIES_FROM_FAT
     calories_carbs = grams_carbs * CALORIES_FROM_CARBS
-
     return calories_fat, calories_carbs
 
 
