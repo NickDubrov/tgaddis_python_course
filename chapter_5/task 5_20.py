@@ -15,7 +15,7 @@ def main():
         # Отримання випадкового числа.
         number = get_random_number()
 
-        # # Отримання числа від користувача і перевірка коректності значення.
+        # Отримання числа від користувача і перевірка коректності значення.
         user_number = get_user_number()
 
         # Робочий цикл гри.
@@ -52,11 +52,11 @@ def get_user_number():
 
 # Функція пропонує користувачу зіграти знову і перевіряє його відповідь.
 def get_answer(attempt=1):
-    user_answer = input("\nБажаєте зіграти знову (y/n)?: ")
-    if user_answer == "y" or user_answer == "Y":
-        is_running = True
-    else:
+    answer = input("\nБажаєте зіграти знову (y/n)?: ")
+    if answer == "n" or answer == "N":
         is_running = False
+    else:
+        is_running = True
     return attempt, is_running
 
 
