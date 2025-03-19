@@ -8,7 +8,7 @@ def main():
     filename = input("Назва файлу: ")
 
     # Відкриття файлу для читання.
-    infile = open("chapter_6\data\\" + filename)
+    infile = open("chapter_6\\data\\" + filename)
 
     # Первинне читання файлу.
     line = infile.readline()
