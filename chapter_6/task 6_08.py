@@ -1,5 +1,5 @@
-# Вправа по програмуванню 6-6
-# Середнє арифметичне чисел
+# Вправа по програмуванню 6-8
+# Читання файлу з випадковими числами
 
 
 # Головна функція.
@@ -9,19 +9,17 @@ def main():
     counter = 0
 
     # Відкриття файлу для читання.
-    infile = open(r"chapter_6\data\numbers.txt")
+    infile = open(r"chapter_6\data\random_numbers.txt")
 
     # Читання файлу. Підрахунок суми чисел та їх кількості.
     for line in infile:
-        number = float(line)
+        number = int(line)
         total += number
         counter += 1
 
-    # Розрахунок середнього арифметичного прочитаних із файлу чисел.
-    average = total / counter
-
     # Виводимо результати на екран.
-    print(f"Середнє арифметичне чисел: {average:.2f}")
+    print(f"Сума чисел: {total}")
+    print(f"Кількість значень: {counter}")
 
     # Закриття файлу.
     infile.close()

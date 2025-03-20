@@ -4,11 +4,11 @@
 
 # Головна функція.
 def main():
-    # Відкриття файлу для читання.
-    infile = open(r"chapter_6\data\numbers.txt")
-
     # Ініціалізація накопичувальної змінної.
     total = 0
+
+    # Відкриття файлу для читання.
+    infile = open(r"chapter_6\data\numbers.txt")
 
     # Читання файлу та підрахунок суми чисел.
     for line in infile:
@@ -16,7 +16,7 @@ def main():
         total += number
 
     # Виводимо результати на екран.
-    print(f"Сума прочитаних із файлу чисел: {total}")
+    print(f"Сума чисел: {total}")
 
     # Закриття файлу.
     infile.close()
