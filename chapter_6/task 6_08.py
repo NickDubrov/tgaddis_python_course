@@ -17,12 +17,12 @@ def main():
         total += number
         counter += 1
 
+    # Закриття файлу.
+    infile.close()
+
     # Виводимо результати на екран.
     print(f"Сума чисел: {total}")
     print(f"Кількість значень: {counter}")
-
-    # Закриття файлу.
-    infile.close()
 
 
 # Виклик головної функції.
