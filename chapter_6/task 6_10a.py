@@ -8,7 +8,7 @@ def main():
     num_players = int(input("Кількість гравців: "))
 
     # Відкриття файлу для запису.
-    outfile = open("chapter_6\\data\\golf.txt", 'w')
+    outfile = open(r"chapter_6\data\golf.txt", 'w')
 
     # Отримання даних про гравця та запис їх до файлу.
     for i in range(num_players):
