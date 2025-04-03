@@ -15,8 +15,7 @@ def main():
 
     # Отримання щоденної суми продажу та розрахунок загального обсягу продажів.
     for i in range(DAYS):
-        print(f"Продаж за {i+1} день: ", end='')
-        sales[i] = float(input())
+        sales[i] = float(input(f"Продаж за {i+1} день: "))
         total += sales[i]
 
     # Виводимо результати на екран.
