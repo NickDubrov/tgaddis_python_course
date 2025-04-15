@@ -30,7 +30,7 @@ def main():
     except IOError:
         print("Виникла помилка під час спроби прочитати файл")
     except Exception as error:
-        print(f"Виникла помилка!")
+        print("Виникла помилка!")
         print(error)
 
 

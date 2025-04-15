@@ -50,7 +50,7 @@ def main():
     except IndexError:
         print("Помилка індексації")
     except Exception as error:
-        print(f"Виникла помилка!")
+        print("Виникла помилка!")
         print(error)
 
 
